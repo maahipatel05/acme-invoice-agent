@@ -1,0 +1,700 @@
+{
+ "official": {
+  "invoice_1001.txt": {
+   "status": "paid",
+   "codes": [],
+   "fields": {
+    "invoice_number": "INV-1001",
+    "vendor": "Widgets Inc.",
+    "due_date": "2026-02-01",
+    "total": "5000.00",
+    "lines": [
+     [
+      "WidgetA",
+      10,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      5,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "7308ab3d7ff26ee338e16ba304e762f0ac90403958d6211cfab36c94eb14dfd1"
+  },
+  "invoice_1002.txt": {
+   "status": "rejected",
+   "codes": [
+    "STOCK_EXCEEDED",
+    "OVER_APPROVAL_LIMIT"
+   ],
+   "fields": {
+    "invoice_number": "1002",
+    "vendor": "Gadgets Co.",
+    "due_date": "2026-01-30",
+    "total": "15000.00",
+    "lines": [
+     [
+      "GadgetX",
+      20,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "c08f8f1d07aa17791fff4b7b25706b011ed230994b9f9058df75f9ef24f9dbd4"
+  },
+  "invoice_1003.txt": {
+   "status": "rejected",
+   "codes": [
+    "ZERO_STOCK_ITEM",
+    "RELATIVE_DUE_DATE",
+    "UNKNOWN_VENDOR",
+    "PAYMENT_PRESSURE",
+    "OVER_APPROVAL_LIMIT"
+   ],
+   "fields": {
+    "invoice_number": "INV-1003",
+    "vendor": "Fraudster LLC",
+    "due_date": null,
+    "total": "100000.00",
+    "lines": [
+     [
+      "FakeItem",
+      100,
+      "1000.00"
+     ]
+    ]
+   },
+   "sha256": "7e71c764fee9d01f42417e8091b0ad26e8c5ce4a88231b545486fbd613967e09"
+  },
+  "invoice_1004.json": {
+   "status": "paid",
+   "codes": [],
+   "fields": {
+    "invoice_number": "INV-1004",
+    "vendor": "Precision Parts Ltd.",
+    "due_date": "2026-02-22",
+    "total": "1890.00",
+    "lines": [
+     [
+      "WidgetA",
+      3,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      2,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "4cd1081738ded8532a7e5a36107723b26459b165bbf5b6c4bca89c437c13b351"
+  },
+  "invoice_1004_revised.json": {
+   "status": "duplicate",
+   "codes": [
+    "DUPLICATE_PAID"
+   ],
+   "fields": {
+    "invoice_number": "INV-1004",
+    "vendor": "Precision Parts Ltd.",
+    "due_date": "2026-02-22",
+    "total": "5940.00",
+    "lines": [
+     [
+      "WidgetA",
+      3,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      2,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      5,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "4383b9318c589fd835fb247b43fd013c3eab3d0295c55dab72465e71893782d2"
+  },
+  "invoice_1005.json": {
+   "status": "rejected",
+   "codes": [
+    "STOCK_EXCEEDED",
+    "OVER_APPROVAL_LIMIT"
+   ],
+   "fields": {
+    "invoice_number": "INV-1005",
+    "vendor": "Global Supply Chain Partners",
+    "due_date": "2026-03-18",
+    "total": "15225.00",
+    "lines": [
+     [
+      "WidgetA",
+      14,
+      "250.00"
+     ],
+     [
+      "GadgetX",
+      8,
+      "750.00"
+     ],
+     [
+      "WidgetB",
+      10,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "ab99b9f5a37071378f0c824a63af4776ebafe37be1b04b3e97c4874ebd6a31ac"
+  },
+  "invoice_1006.csv": {
+   "status": "paid",
+   "codes": [],
+   "fields": {
+    "invoice_number": "INV-1006",
+    "vendor": "Acme Industrial Supplies",
+    "due_date": "2026-02-10",
+    "total": "2750.00",
+    "lines": [
+     [
+      "WidgetA",
+      5,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      3,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "7f8177bebb8054253fd11f873b63272d36da4068a7c7043dce06143e3f5c35a2"
+  },
+  "invoice_1007.csv": {
+   "status": "rejected",
+   "codes": [
+    "TOTAL_MISMATCH",
+    "STOCK_EXCEEDED",
+    "OVER_APPROVAL_LIMIT"
+   ],
+   "fields": {
+    "invoice_number": "INV-1007",
+    "vendor": "MegaWidgets Corp",
+    "due_date": "2026-02-28",
+    "total": "15525.00",
+    "lines": [
+     [
+      "WidgetA",
+      20,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      15,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      3,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "332b4c6464b59d5a286549ae8c0cc69f0eaec8f15665324a32c2a91839e8f2fe"
+  },
+  "invoice_1008.txt": {
+   "status": "rejected",
+   "codes": [
+    "UNKNOWN_ITEM",
+    "UNKNOWN_VENDOR"
+   ],
+   "fields": {
+    "invoice_number": "INV-1008",
+    "vendor": "NoProd Industries",
+    "due_date": "2026-01-20",
+    "total": "9900.00",
+    "lines": [
+     [
+      "SuperGizmo",
+      12,
+      "400.00"
+     ],
+     [
+      "MegaSprocket",
+      6,
+      "850.00"
+     ]
+    ]
+   },
+   "sha256": "a72eaf616b0f9fdba3266371bc21b77664ee5627511dd98c976329cb9c906a12"
+  },
+  "invoice_1009.json": {
+   "status": "rejected",
+   "codes": [
+    "MISSING_VENDOR",
+    "MISSING_DUE_DATE",
+    "INVALID_QUANTITY",
+    "INVALID_AMOUNT",
+    "SUBTOTAL_MISMATCH"
+   ],
+   "fields": {
+    "invoice_number": "INV-1009",
+    "vendor": null,
+    "due_date": null,
+    "total": "-250.00",
+    "lines": [
+     [
+      "WidgetA",
+      -5,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      2,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "305a453ed46b0b54f681b58b4ac218cd93057dd4ee14e2110be61c1ce1a072a2"
+  },
+  "invoice_1010.txt": {
+   "status": "pending_review",
+   "codes": [
+    "PRICE_VARIANCE"
+   ],
+   "fields": {
+    "invoice_number": "INV-1010",
+    "vendor": "Consolidated Materials Group",
+    "due_date": "2026-02-26",
+    "total": "7185.00",
+    "lines": [
+     [
+      "WidgetA",
+      8,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      4,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      2,
+      "750.00"
+     ],
+     [
+      "WidgetA",
+      4,
+      "300.00"
+     ]
+    ]
+   },
+   "sha256": "99d9958bf530d30d0766c26a9b1f2ea4810b0da9399ab8da24ec47e764872871"
+  },
+  "invoice_1011.pdf": {
+   "status": "paid",
+   "codes": [],
+   "fields": {
+    "invoice_number": "INV-1011",
+    "vendor": "Summit Manufacturing Co.",
+    "due_date": "2026-02-20",
+    "total": "3000.00",
+    "lines": [
+     [
+      "WidgetA",
+      6,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      3,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "bf3d624f6dceec42f52ac7129c14fcb975f976dc3ccaba1f07abd4f18c511da6"
+  },
+  "invoice_1011.txt": {
+   "status": "duplicate",
+   "codes": [
+    "DUPLICATE_PAID"
+   ],
+   "fields": {
+    "invoice_number": "INV-1011",
+    "vendor": "Summit Manufacturing Co.",
+    "due_date": "2026-02-20",
+    "total": "3000.00",
+    "lines": [
+     [
+      "WidgetA",
+      6,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      3,
+      "500.00"
+     ]
+    ]
+   },
+   "sha256": "fce3d019284fe8d5a1453caaf7903d0a7a1fecd00476ed256767575f03382de7"
+  },
+  "invoice_1012.pdf": {
+   "status": "pending_review",
+   "codes": [
+    "EXTRACTION_UNCERTAINTY",
+    "VENDOR_RENAMED"
+   ],
+   "fields": {
+    "invoice_number": "INV 1012",
+    "vendor": "QuickShip Distributers",
+    "due_date": "2026-02-25",
+    "total": "9975.00",
+    "lines": [
+     [
+      "WidgetA",
+      12,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      7,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      4,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "c20e713fe9e64c90b75b8ac4f38b12c719768c38e86428481e8bec6183035d43"
+  },
+  "invoice_1012.txt": {
+   "status": "pending_review",
+   "codes": [
+    "EXTRACTION_UNCERTAINTY",
+    "VENDOR_RENAMED",
+    "DUPLICATE_PENDING"
+   ],
+   "fields": {
+    "invoice_number": "INV 1012",
+    "vendor": "QuickShip Distributers",
+    "due_date": "2026-02-25",
+    "total": "9975.00",
+    "lines": [
+     [
+      "WidgetA",
+      12,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      7,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      4,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "e2a9e555b3bb5563fab5a408451586dc2d1c8e107780c9724ce9309ce96a15f7"
+  },
+  "invoice_1013.json": {
+   "status": "rejected",
+   "codes": [
+    "TOTAL_MISMATCH",
+    "STOCK_EXCEEDED",
+    "OVER_APPROVAL_LIMIT"
+   ],
+   "fields": {
+    "invoice_number": "INV-1013",
+    "vendor": "Atlas Industrial Supply",
+    "due_date": "2026-03-24",
+    "total": "22562.80",
+    "lines": [
+     [
+      "WidgetA",
+      15,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      10,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      5,
+      "750.00"
+     ],
+     [
+      "WidgetA",
+      5,
+      "240.00"
+     ],
+     [
+      "WidgetB",
+      8,
+      "480.00"
+     ],
+     [
+      "GadgetX",
+      3,
+      "750.00"
+     ],
+     [
+      "WidgetA",
+      2,
+      "250.00"
+     ],
+     [
+      "GadgetX",
+      1,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "70b9e1fe4acf7316d5a0e0f0a0922c50ca4492241dd07c704e74c9dc7881d63b"
+  },
+  "invoice_1013.pdf": {
+   "status": "rejected",
+   "codes": [
+    "TOTAL_MISMATCH",
+    "STOCK_EXCEEDED",
+    "OVER_APPROVAL_LIMIT"
+   ],
+   "fields": {
+    "invoice_number": "INV-1013",
+    "vendor": "Atlas Industrial Supply",
+    "due_date": "2026-03-24",
+    "total": "22562.80",
+    "lines": [
+     [
+      "WidgetA",
+      15,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      10,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      5,
+      "750.00"
+     ],
+     [
+      "WidgetA",
+      5,
+      "240.00"
+     ],
+     [
+      "WidgetB",
+      8,
+      "480.00"
+     ],
+     [
+      "GadgetX",
+      3,
+      "750.00"
+     ],
+     [
+      "WidgetA",
+      2,
+      "250.00"
+     ],
+     [
+      "GadgetX",
+      1,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "b9c553d0bf2ed57f8000a34a87cf15c725d43edc08f82d2e3ea1a9aa0379e317"
+  },
+  "invoice_1014.xml": {
+   "status": "pending_review",
+   "codes": [
+    "NON_USD_CURRENCY"
+   ],
+   "fields": {
+    "invoice_number": "INV-1014",
+    "vendor": "TechParts International",
+    "due_date": "2026-02-26",
+    "total": "4125.00",
+    "lines": [
+     [
+      "WidgetA",
+      4,
+      "225.00"
+     ],
+     [
+      "WidgetB",
+      6,
+      "475.00"
+     ]
+    ]
+   },
+   "sha256": "dc80f570bac8007c1f360f0a927371ce1ac3813bc2b0b9758570fc738e48a18b"
+  },
+  "invoice_1015.csv": {
+   "status": "paid",
+   "codes": [],
+   "fields": {
+    "invoice_number": "INV-1015",
+    "vendor": "Reliable Components Inc.",
+    "due_date": "2026-02-28",
+    "total": "6500.00",
+    "lines": [
+     [
+      "WidgetA",
+      10,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      5,
+      "500.00"
+     ],
+     [
+      "GadgetX",
+      2,
+      "750.00"
+     ]
+    ]
+   },
+   "sha256": "6cbed47ed55eabedc5aab7d22c8a6e6f067baa5addb96969ab58fe118fcaf7e2"
+  },
+  "invoice_1016.json": {
+   "status": "rejected",
+   "codes": [
+    "UNKNOWN_ITEM"
+   ],
+   "fields": {
+    "invoice_number": "INV-1016",
+    "vendor": "Widgets Inc.",
+    "due_date": "2026-02-27",
+    "total": "3233.00",
+    "lines": [
+     [
+      "WidgetA",
+      4,
+      "250.00"
+     ],
+     [
+      "WidgetB",
+      2,
+      "500.00"
+     ],
+     [
+      "WidgetC",
+      3,
+      "350.00"
+     ]
+    ]
+   },
+   "sha256": "fa57af73e932b9a6900b9c7473efc2a8c584f525d9b8feee33052c72b3d0917c"
+  }
+ },
+ "scenarios": {
+  "clean.json": {
+   "status": "paid",
+   "codes": []
+  },
+  "clean.csv": {
+   "status": "paid",
+   "codes": []
+  },
+  "clean.txt": {
+   "status": "paid",
+   "codes": []
+  },
+  "clean.pdf": {
+   "status": "paid",
+   "codes": []
+  },
+  "high_value.json": {
+   "status": "pending_review",
+   "codes": [
+    "OVER_APPROVAL_LIMIT"
+   ]
+  },
+  "foreign.xml": {
+   "status": "pending_review",
+   "codes": [
+    "NON_USD_CURRENCY"
+   ]
+  },
+  "stock_mismatch.txt": {
+   "status": "rejected",
+   "codes": [
+    "STOCK_EXCEEDED"
+   ]
+  },
+  "prompt_injection.txt": {
+   "status": "rejected",
+   "codes": [
+    "ZERO_STOCK_ITEM",
+    "PROMPT_INJECTION"
+   ]
+  },
+  "lookalike_vendor.txt": {
+   "status": "pending_review",
+   "codes": [
+    "VENDOR_LOOKALIKE"
+   ]
+  },
+  "bank_change.txt": {
+   "status": "pending_review",
+   "codes": [
+    "PAYMENT_PRESSURE"
+   ]
+  },
+  "overbilled.json": {
+   "status": "pending_review",
+   "codes": [
+    "PRICE_VARIANCE"
+   ]
+  },
+  "messy_email.txt": {
+   "status": {
+    "offline": "rejected",
+    "gemini": "paid"
+   },
+   "codes": []
+  },
+  "homoglyph_vendor.txt": {
+   "status": "pending_review",
+   "codes": [
+    "VENDOR_LOOKALIKE"
+   ]
+  },
+  "credit_note.txt": {
+   "status": "rejected",
+   "codes": [
+    "INVALID_QUANTITY",
+    "INVALID_AMOUNT"
+   ]
+  },
+  "fractional_qty.json": {
+   "status": "rejected",
+   "codes": [
+    "INVALID_QUANTITY"
+   ]
+  }
+ },
+ "notes": {
+  "official": "The 20 supplied invoices, processed in filename order against one shared ledger so revisions and cross-format duplicates are exercised. Field expectations were transcribed from the source documents by hand, independently of the parsers.",
+  "scenarios": "Extra cases written for this prototype; each runs in its own fresh ledger."
+ }
+}

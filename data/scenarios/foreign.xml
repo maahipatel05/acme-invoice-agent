@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoice><header><invoice_number>ACME-DEMO-005</invoice_number><vendor>Widgets Inc.</vendor><due_date>2026-12-01</due_date><currency>EUR</currency></header><line_items><item><name>WidgetA</name><quantity>1</quantity><unit_price>250.00</unit_price></item></line_items><totals><total>250.00</total></totals></invoice>

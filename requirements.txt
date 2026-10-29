@@ -1,0 +1,3 @@
+# The core runs on the Python 3.11+ standard library. PyMuPDF reads PDFs offline;
+# Gemini mode uses the REST API directly, so no SDK is needed.
+PyMuPDF==1.26.7

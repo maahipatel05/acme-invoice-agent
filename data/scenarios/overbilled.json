@@ -1,0 +1,2 @@
+{"invoice_number": "INV-2004", "vendor": {"name": "Widgets Inc."}, "due_date": "2026-03-20", "currency": "USD",
+ "line_items": [{"item": "WidgetB", "quantity": 4, "unit_price": 700.00}], "subtotal": 2800.00, "tax_amount": 0, "total": 2800.00}

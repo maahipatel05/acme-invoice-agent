@@ -1,0 +1,3 @@
+invoice_number,vendor,due_date,currency,total,tax_amount,item,quantity,unit_price
+ACME-DEMO-004,Widgets Inc.,2026-12-01,USD,750.00,0,WidgetA,1,250.00
+ACME-DEMO-004,Widgets Inc.,2026-12-01,USD,750.00,0,WidgetB,1,500.00

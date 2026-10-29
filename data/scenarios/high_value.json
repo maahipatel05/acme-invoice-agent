@@ -1,0 +1,1 @@
+{"invoice_number":"ACME-DEMO-002","vendor":"Widgets Inc.","due_date":"2026-12-01","currency":"USD","items":[{"item":"WidgetA","quantity":15,"unit_price":"250.00"},{"item":"WidgetB","quantity":10,"unit_price":"500.00"},{"item":"GadgetX","quantity":5,"unit_price":"750.00"}],"total":"12500.00"}

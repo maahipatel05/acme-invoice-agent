@@ -1,0 +1,9 @@
+INVOICE
+Vendor: Gadgets Co.
+Invoice Number: INV-2003
+Due Date: 2026-03-10
+Currency: USD
+Items:
+  GadgetX   qty: 2   unit price: $750.00
+Total Amount: $1,500.00
+Notes: Please note our change of bank details. Send this payment by wire transfer to the new account number on file.

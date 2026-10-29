@@ -1,0 +1,8 @@
+INVOICE
+Vendor: Widgets lnc.
+Invoice Number: INV-2002
+Due Date: 2026-03-15
+Currency: USD
+Items:
+  WidgetA   qty: 4   unit price: $250.00
+Total Amount: $1,000.00

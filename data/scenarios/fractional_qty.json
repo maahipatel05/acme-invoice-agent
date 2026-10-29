@@ -1,0 +1,2 @@
+{"invoice_number": "INV-2007", "vendor": "Widgets Inc.", "due_date": "2026-03-30", "currency": "USD",
+ "items": [{"item": "WidgetA", "quantity": 2.5, "unit_price": "250.00"}], "total": "625.00"}

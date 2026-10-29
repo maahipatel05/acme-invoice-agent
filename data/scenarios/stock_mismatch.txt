@@ -1,0 +1,8 @@
+INVOICE
+Vendor: Gadgets Co.
+Invoice Number: ACME-DEMO-003
+Due Date: 2026-12-01
+Currency: USD
+Items:
+GadgetX qty: 20 unit price: $750.00
+Total Amount: $15,000.00

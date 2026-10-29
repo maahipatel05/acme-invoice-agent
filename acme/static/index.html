@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acme · Invoice operations</title>
+<link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<header><a href="/" class="brand">ACME <span>/ Finance operations</span></a><span id="mode">Local workspace</span></header>
+<main>
+  <div class="intro">
+    <div><p class="eyebrow">ACCOUNTS PAYABLE</p><h1>From inbox to decision.</h1>
+      <p>Agents read, check and route every invoice. People only see the exceptions, with the reason attached.</p></div>
+    <div class="notice">Prototype workspace<br><strong>All payments are simulated.</strong></div>
+  </div>
+  <section class="metrics" aria-label="Processing summary">
+    <div><span>Invoices received</span><strong id="count">0</strong><small id="speed"></small></div>
+    <div><span>Paid without a person</span><strong id="paid">0</strong><small id="stp"></small></div>
+    <div><span>Awaiting review</span><strong id="pending">0</strong><small>exceptions with reasons</small></div>
+    <div><span>Blocked</span><strong id="blocked">0</strong><small id="saved"></small></div>
+  </section>
+  <section class="upload">
+    <div><h2>Add an invoice</h2><p>PDF, TXT, JSON, CSV or XML · up to 5 MB · try the files in data/invoices</p></div>
+    <form id="upload"><label class="sr-only" for="file">Invoice file</label>
+      <input id="file" type="file" accept=".pdf,.txt,.json,.csv,.xml" multiple required><button id="process">Process</button></form>
+  </section>
+  <p id="message" role="status" aria-live="polite"></p>
+  <div class="workspace">
+    <section aria-label="Invoice queue">
+      <div class="section-title"><h2>Invoice queue</h2>
+        <div class="filters" role="group" aria-label="Filter queue">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="pending_review" aria-pressed="false">Needs review</button>
+          <button class="chip" data-filter="paid" aria-pressed="false">Paid</button>
+          <button class="chip" data-filter="blocked" aria-pressed="false">Blocked</button>
+        </div></div>
+      <div id="queue"><p class="empty">No invoices yet. Upload a file from data/invoices to begin.</p></div>
+    </section>
+    <section class="detail" aria-label="Selected invoice"><div id="detail">
+      <p class="eyebrow">DECISION RECORD</p><h2>Every invoice has a story.</h2>
+      <p>Select an invoice to see what the agents extracted, every finding, the approval reasoning and the audit trail.</p>
+    </div></section>
+  </div>
+  <footer>Local SQLite ledger · Every finding coded and explained · Duplicate payment protection · Human review for exceptions</footer>
+</main>
+</body>
+</html>

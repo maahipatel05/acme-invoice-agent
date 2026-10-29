@@ -1,0 +1,8 @@
+INVOICE
+Vendor: Widgets Ιnc.
+Invoice Number: INV-2005
+Due Date: 2026-03-30
+Currency: USD
+Items:
+  WidgetB   qty: 2   unit price: $500.00
+Total Amount: $1,000.00

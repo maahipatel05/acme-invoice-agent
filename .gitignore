@@ -1,0 +1,22 @@
+# Secrets and local configuration
+.env
+.env.*
+
+# Local runtime data (SQLite workspaces, caches, virtualenvs)
+.runtime/
+*.db
+*.db-shm
+*.db-wal
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Machine-readable eval output; the Markdown reports are committed
+reports/*.json
+
+# Editor, OS and tool folders (hidden directories other than CI)
+.DS_Store
+*.swp
+/.*/
+!/.github/

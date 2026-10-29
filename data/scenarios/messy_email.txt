@@ -1,0 +1,11 @@
+From: billing@widgets-inc.example
+Subject: invoice for last week's order
+
+Hi Acme team,
+
+Please find our invoice below. Invoice no. INV-2001, payable by 2026-03-01 (USD).
+We shipped 2 units of WidgetA at $250.00 each and 1 WidgetB at $500.00.
+Total due: $1,000.00
+
+Thanks,
+Dana at Widgets Inc.
